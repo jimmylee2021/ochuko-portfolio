@@ -1,0 +1,159 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    transition: .2s all linear;
+}
+a {
+    text-decoration: none;
+}
+header {
+    background:#fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav.nav.active{
+    position: fixed;
+    top: 50px;right:0;left:0;
+}
+header.sticky {
+    position: fixed;
+    top: 0;right: 0;left: 0;
+    box-shadow: .0.5rem 1rem rgba(0,0,0,.1);
+}
+
+.logo a{
+    margin-left: 30px;
+    color: #000;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+nav.nav {
+    display: none;
+}
+
+nav.nav.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    left: 0;top: 100px;
+    width: 100%;
+    border-top: 3px solid #000;
+    height: 50%;
+    box-shadow: .0.5rem 1rem rgba(0,0,0,.1);
+    background: #fff;
+}
+nav.nav.active a {
+    padding: 20px;
+    color: #000;
+    font-size: 20px;
+    text-decoration: wavy;
+}
+#menu-bar {
+    font-size: 2rem;
+}
+section {
+     margin: 50px;
+}
+.row{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+}
+.row-1 h1 {
+     width: 300px;
+     text-align: center;
+}
+.btn {
+     padding: 14px 20px;
+     background: #000;
+     color: #fff;
+     display: inline-block;
+     margin-top: 30px;
+}
+section h1 {
+     text-align: center;
+}
+.works-div {
+     display:flex;
+     flex-wrap: wrap;
+     justify-content: center;
+     align-items: center;
+}
+.works-container {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-wrap: wrap;
+     margin-top: 50px;
+}
+.works-bx {
+     width: 300px;
+     height: 200px;
+     background: #333;
+     margin: 20px;
+}
+.services .works-bx {
+     background: #fff;
+     box-shadow: .0.5rem 1rem rgba(0,0,0,.1);
+     padding: 20px;
+}
+.services .works-bx h1 {
+     text-align: center;
+}
+
+footer {
+     text-align: center;
+     background: #000;
+     color: #fff;
+     padding: 20px;
+}
+.info {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+.info-contact {
+     display: flex;
+     flex-direction: column;
+}
+.footer-txt {
+     color: #fff;
+}
+
+
+
+
+@media only screen and (min-width: 991px) {
+    nav.nav{
+        display: flex;
+    }
+    nav.nav a {
+        font-size: 20px;
+        margin: 20px;
+        padding: 10px;
+        color: #000;
+        text-decoration: none;
+    }
+    div#menu-bar {
+        display: none;
+
+    }
+    .row{
+        display: flex;
+        justify-content:left;
+        align-items: left;
+        margin: 50px;
+        text-align: left;
+   }
+   .row-1 h1 {
+      text-align: left;
+   }
+}
